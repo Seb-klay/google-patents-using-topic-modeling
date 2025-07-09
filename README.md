@@ -1,7 +1,3 @@
-Sure! Here's your `README.md` summary in proper Markdown structure and formatting, without emojis or embellishments:
-
----
-
 # Google Patents Analysis: Privacy vs Tracking Post-Third-Party Cookie Phase-Out
 
 ## 1. Objective and Hypotheses
@@ -35,7 +31,9 @@ BERTopic was used to extract and visualize meaningful topics from patent abstrac
 * **HDBSCAN** for unsupervised clustering
 * BERTopic visualization tools for topic exploration
 
-<img src="charts/patents_from_google_with_datamapplot_subtopics_bis.html" alt="Description of image" width="600"/>
+<div align="center">
+    <img src="charts/patents_from_google_with_datamapplot_subtopics_bis.html" alt="Patents from Google" width="600"/>
+</div>
 
 ### 3.2 Topic Evolution Analysis
 
@@ -44,7 +42,9 @@ Trends in patent filings over time were analyzed. Key findings include:
 * **2014–2016:** Rise in patents on search queries, ads, geographic location, and social graphs
 * **2017–2023:** Growth in topics related to image processing, speech data, wireless communication, and neural networks
 
-<img src="charts/subtopics_over_time.html" alt="Description of image" width="600"/>
+<div align="center">
+    <img src="charts/subtopics_over_time.html" alt="Subtopics over time" width="600"/>
+</div>
 
 ---
 
@@ -97,3 +97,6 @@ The results support the **rejection of the null hypothesis (H₀)**.
 
 There is strong evidence that Google’s increased privacy-related patent activity aligns with the development of alternative tracking and targeting systems. These results suggest a strategic adaptation that maintains or even enhances user profiling capabilities under new privacy standards.
 
+<div align="center">
+    <img src="charts/patent_proportions_plot.png" alt="Subtopics over time" width="600"/>
+</div>
