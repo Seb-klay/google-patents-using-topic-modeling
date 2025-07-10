@@ -43,7 +43,7 @@ Trends in patent filings over time were analyzed. Key findings include:
 * **2017–2023:** Growth in topics related to image processing, speech data, wireless communication, and neural networks
 
 <div align="center">
-    <img src="charts/subtopics_over_time.png" alt="Subtopics over time" width="600"/>
+    <img src="charts/topics_over_time.png" alt="Subtopics over time" width="600"/>
 </div>
 
 ### 3.3 Embedding Limitations and Shift to Classification
