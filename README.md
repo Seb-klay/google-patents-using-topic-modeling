@@ -26,13 +26,13 @@ This project investigates how Google’s patent strategy has evolved in response
 
 BERTopic was used to extract and visualize meaningful topics from patent abstracts. The approach includes:
 
-* **BERT embeddings** for semantic vectorization
+* **SBERT embeddings** for semantic vectorization
 * **UMAP** for dimensionality reduction
 * **HDBSCAN** for unsupervised clustering
 * BERTopic visualization tools for topic exploration
 
 <div align="center">
-    <img src="charts/patents_from_google_with_datamapplot_subtopics_bis.html" alt="Patents from Google" width="600"/>
+    <img src="charts/patents_from_google_with_datamapplot.gif" alt="Patents from Google" width="600"/>
 </div>
 
 ### 3.2 Topic Evolution Analysis
@@ -43,12 +43,10 @@ Trends in patent filings over time were analyzed. Key findings include:
 * **2017–2023:** Growth in topics related to image processing, speech data, wireless communication, and neural networks
 
 <div align="center">
-    <img src="charts/subtopics_over_time.html" alt="Subtopics over time" width="600"/>
+    <img src="charts/subtopics_over_time.png" alt="Subtopics over time" width="600"/>
 </div>
 
----
-
-## 4. Embedding Limitations and Shift to Classification
+### 3.3 Embedding Limitations and Shift to Classification
 
 Initial analyses used cosine similarity between topic embedding centroids. However, due to semantic overlap in co-occurring terms (e.g., "privacy" and "tracking"), embeddings failed to distinguish opposing concepts.
 
@@ -56,9 +54,7 @@ For example, searching for “tracking” and “privacy” returned highly simi
 
 To address this, the methodology shifted toward supervised learning.
 
----
-
-## 5. Machine Learning Classification
+### 3.4 Machine Learning Classification
 
 A labeled dataset was created to distinguish between privacy-related and tracking-related patents. The following models were tested:
 
@@ -67,7 +63,7 @@ A labeled dataset was created to distinguish between privacy-related and trackin
 * Decision Tree
 * XGBoost
 
-### 5.1 Model Performance
+### 3.5 Model Performance
 
 Logistic Regression was chosen due to its balanced and reliable performance:
 
@@ -79,7 +75,7 @@ Other models showed instability, signs of overfitting or worse scores.
 
 ---
 
-## 6. Statistical Testing
+## 4. Statistical Testing
 
 A Chi-squared test of independence was used to assess the significance of topic distribution shifts post-2020.
 
@@ -91,7 +87,7 @@ This indicates a significant and non-random change in patent filing patterns aft
 
 ---
 
-## 7. Conclusion
+## 5. Conclusion
 
 The results support the **rejection of the null hypothesis (H₀)**.
 
